@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background-color: #11101d;
+    padding: 15px 14px;
+}
+.sidebar .logo-content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.logo-content .logo i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+.logo-content .logo .logo-name {
+    font-size: 20px;
+    font-weight: 400;
+}
+.sidebar #btn {
+    position: absolute;
+    color: #fff;
+    left: 90%;
+    top: 0px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    line-height: 63px;
+    transform: translateX(-50%);
+}
+.sidebar ul {
+    margin-top: 10px;
+}
+.sidebar ul li {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 2px;
+    list-style: none;
+    line-height: 50px;
+    border-radius: 12px;
+}
+.sidebar ul li .bx-search {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+    left: 8px;
+    line-height: 43px;
+}
+.sidebar ul li input {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    left: -2px;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+.sidebar ul li a:hover {
+    color: #11101d;
+    background-color: #fff;
+    border: none;
+    padding: 0 10px;
+}
+.sidebar ul li  i {
+    height: 47px;
+    min-height: 47px;
+    border-radius: 120px;
+    line-height: 50px;
+    text-align: center ;
+}
+.sidebar  .profile-content {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.sidebar  .profile-content .profile {
+    position: relative;
+    padding: 1px 10px;
+    height: 60px;
+}
+.profile-content .profile .profile-detail {
+    display: flex;
+    align-items: center;
+}
+.profile .profile-detail img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.profile .profile-detail .identity {
+    padding: 0 8px;
+}
+.profile #log-out {
+    position: absolute;
+    left: 90%;
+}
