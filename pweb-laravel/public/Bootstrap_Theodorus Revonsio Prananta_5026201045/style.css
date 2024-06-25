@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url("7445.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.report-form h1{
+    font-size: 40px;
+    color: white;
+}
+.report-form p{
+    font-size: 17px;
+    color: white;
+}
+.col-6 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    box-shadow:  3px 4px 5px 6px black;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+}
+.report-form label {
+    font-size: 17px;
+    color: white;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.report-form .form-control {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 10px !important;
+    color: rgb(255, 255, 255);
+}
+
+.report-form .form-control-textarea {
+    border-top: none;
+    background: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 10px !important;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.report-form .form-control-file-border{
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 10px !important;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.report-form .form-control:focus {
+    border: none;
+    margin: 0 auto;
+    background: none;
+    box-shadow: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+i{
+    color: #ffffff;
+    padding-right: 8px;
+}
+.report-form .form-control .select{
+    color: #ffffff;
+}
+option{
+    background-color: #000 !important;
+}
