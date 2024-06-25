@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Light/Dark Mode Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #91F9F0;
+            color: black;
+            height: 100vh;
+            background-image: url("https://www.msig.com.hk/modules/custom/msig_biodiversity/images/initiatives-foreground-update.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: bottom;
+        }
+
+        #card {
+            opacity: 85%;
+        }
+    </style>
+    <script>
+        $(function () {
+
+
+            $("#button").click(function () {
+                $("body").css({ "background-color": "#282A36" });
+                $("#card").css({ "background-color": "#45495f", "color": "white" });
+                $("#button").html('Double Click to Apply Light Mode');
+                $("h2").html('Dark Mode');
+                $("h3").css({ "color": "#white" });
+
+            });
+
+            $("#button").dblclick(function () {
+                $("body").css({ "background-color": "#91F9F0" });
+                $("#card").css({ "background-color": "white", "color": "black" });
+                $("#button").html('Click to Apply Dark Mode');
+                $("h2").html('Light Mode');
+            })
+        });
+    </script>
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="container d-flex h-100 justify-content-center">
+        <div class="row align-self-center w-100">
+            <div class="col col-sm-5 mx-auto">
+                <div class="card card-body p-sm-3" id="card">
+                    <h2 style="text-align: center;">Light Mode</h2>
+                    <p style="text-align: center;">You can choose a theme according to your wishes by clicking the
+                        button below.</p>
+                    <button id="button" type="button" class="btn btn-block btn-dark">Click to Apply Dark Mode</button>
+                    <br>
+                    <h3 style="text-align: center;">JavaScript Form Validation</h3>
+                    <form action="https://github.com/revonsio" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="name">Email:</label>
+                            <input type="text" class="form-control" id="form-email" placeholder="Enter Your E-mail"
+                                required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Username(6-8 characters):</label>
+                            <input type="text" class="form-control" id="form-uname" placeholder="Enter Your Username"
+                                required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-dark btn-block">Check Form</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

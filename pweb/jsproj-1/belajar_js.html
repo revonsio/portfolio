@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Belajar Js - Revonsio</title>
+
+        <script>
+            function MyFunction() {
+                document.body.style.backgroundColor = 'blue';
+            }
+        </script>
+    </head>
+
+    <body>
+        <p id="demo">Belajar JavaScript itu sulit.</p>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Belajar JavaScript itu mudah!'">Start Learn JS</button>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Belajar JavaScript itu sulit!'">Stop Learn JS</button>
+
+        <button type="button" onclick="document.getElementById('demo').style.fontSize = '35'">Click to change fontsize</button>
+
+        <button type="button" onclick="MyFunction()">Click to change background colour</button>
+    </body>
+</html>
